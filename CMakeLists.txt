@@ -190,5 +190,5 @@ target_link_libraries(model_push ${GAZEBO_LIBRARIES} ${Boost_LIBRARIES})
 
 if(CATKIN_ENABLE_TESTING)
   find_package(rostest REQUIRED)
-  # add_rostest(test/test_level1.test)  # FIXME: on Travis it fails
+  add_rostest(test/test_level1.test)
 endif()
