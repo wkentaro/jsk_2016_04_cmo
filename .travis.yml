@@ -47,6 +47,9 @@ before_script:
   - cd $CATKIN_WS
   - rosdep install -q -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 
+  # install xvfb-run
+  - sudo -H apt-get install xvfb
+
 # Compile and test.
 script:
   - source /opt/ros/$ROS_DISTRO/setup.bash
